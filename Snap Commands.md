@@ -6,6 +6,7 @@ To list all installed snap package run the following command:
 Once the exact package name is known, then it can be uninstalled by typing:
 
 `sudo snap remove package_name`
+
 `snap remove --purge package_name`
 
 ### Uninstall Unused Packages
