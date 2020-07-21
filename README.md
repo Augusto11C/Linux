@@ -14,5 +14,6 @@ When completed the downloaded file will be inside `/tmp` folder
 
 The above command will unzip gradle-*.zip and move it for the folder `/opt/gradle`
 
-
+## Remove `specific` folders in all subfolders
+`find . -type d | grep -E '/target$' | xargs rm -r`
 
