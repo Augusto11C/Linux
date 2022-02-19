@@ -90,3 +90,34 @@ load-module module-dbus-protocol
 $ pulseaudio --kill && pulseaudio --start
 
 ```
+
+## Questions 
+- What is swappiness?
+
+```
+cat /proc/sys/vm/swappiness
+// 60
+
+sudo xed /etc/sysctl.conf
+
+// last line insert: 
+// vm.swappiness=10 
+
+// save file & reboot
+```
+
+- What is timestamp write and why do we disable them when using SSD?
+    - [system performance with noatime](https://opensource.com/article/20/6/linux-noatime)
+
+## Things to Figure out How to use Through the Terminal
+- Driver Manager
+- Change location Mirrors
+  ![image](https://user-images.githubusercontent.com/17462762/154803226-8b99716c-1cc9-4d1e-933f-9b00fb45a83c.png)
+- Install codecs (multimedia)
+    - What is codecs?
+- Install microsoft fonts
+    - I installed through Synaptic Package Manager (Synaptic Package Manager)
+- Custom Shortcuts
+
+
+https://draculatheme.com/gnome-terminal
