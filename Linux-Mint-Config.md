@@ -68,8 +68,6 @@ $ xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/"
 ```
 
 
-
-
 ## Audio Adjustments (Pulse Audio)
 ```
 $ sudo apt install pulseaudio-equalizer
@@ -114,6 +112,12 @@ sudo xed /etc/sysctl.conf
 
 - What is timestamp write and why do we disable them when using SSD?
     - [system performance with noatime](https://opensource.com/article/20/6/linux-noatime)
+
+- What is the package mannager `cargo`?
+    - `cargo install exa`
+
+- What is `exa`?
+    - A replacement for the comand `ls`? 
 
 ## Things to Figure out How to use Through the Terminal
 - Driver Manager
