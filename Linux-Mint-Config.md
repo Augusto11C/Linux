@@ -91,6 +91,12 @@ $ pulseaudio --kill && pulseaudio --start
 
 ```
 
+## Terminal Theme
+
+### Gnome
+- [Color Schema Gogh](https://mayccoll.github.io/Gogh/)
+- [Dracula Gnome Terminal](https://github.com/dracula/gnome-terminal)
+
 ## Questions 
 - What is swappiness?
 
