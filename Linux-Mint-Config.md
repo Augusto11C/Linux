@@ -1,14 +1,12 @@
 # Linux Mint Configuration
 
 ## Resolution Adjustments (`xrandr` and `gtf`)
-
 ### Detect resolution automatically
 ```
 sudo xrandr --output HDMI-0 --auto
 ```
 
 ### Selecting an existing resolution
-
 Enumerate the names of all your video outputs, and the possible resolutions for those currently connected to a monitor:
 
 ```
@@ -22,7 +20,6 @@ xrandr --output <OUTPUT> --mode 1024x768
 ```
 
 ### Creating a Resolution
-
 - First use gtf to create a mode line
 
 ```
@@ -62,13 +59,26 @@ xrandr --delmode <output> <name>
 ```
 
 ### Find the current display
-
 ```
 $ xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/"
 ```
 
+## Others Installed Programs
 
-## Audio Adjustments (Pulse Audio)
+### `fzf`
+
+### `starshipt`
+
+### `foliate`
+
+### `okular`
+
+### `btop`
+
+### `flameshot`
+
+## Audio Adjustments
+### Pulse
 ```
 $ sudo apt install pulseaudio-equalizer
 
@@ -89,8 +99,12 @@ $ pulseaudio --kill && pulseaudio --start
 
 ```
 
-## Terminal Theme
+### Problems with Microphone
+- [Headset microphone not working](https://askubuntu.com/questions/1230016/headset-microphone-not-working-on-ubuntu-20-04)
+- [Microphone from headset not working](https://forums.linuxmint.com/viewtopic.php?t=299427)
 
+
+## Terminal Theme
 ### Gnome
 - [Color Schema Gogh](https://mayccoll.github.io/Gogh/)
 - [Dracula Gnome Terminal](https://github.com/dracula/gnome-terminal)
@@ -119,6 +133,29 @@ sudo xed /etc/sysctl.conf
 - What is `exa`?
     - A replacement for the comand `ls`? 
 
+
+## Terminal file manager for the console
+### `ranger`
+```
+sudo apt install ranger
+
+``` 
+
+## Application Launcher
+### `rofi`
+[Rofi](https://github.com/davatorium/rofi) is a window switcher, Application launcher and dmenu replacement.
+```
+sudo apt install rofi
+```
+
+## Command-line System Information Tool
+### `neofetch`
+[Neofetch](https://github.com/dylanaraps/neofetch) is a command-line system information tool written in bash 3.2+. Neofetch displays information about the operating system, software and hardware in an aesthetic and visually pleasing way.
+
+### `inxi`
+- Fetching System Information using Inxi: `inxi -Fxz`
+
+
 ## Things to Figure out How to use Through the Terminal
 - Driver Manager
 - Change location Mirrors
@@ -128,6 +165,5 @@ sudo xed /etc/sysctl.conf
 - Install microsoft fonts
     - I installed through Synaptic Package Manager (Synaptic Package Manager)
 - Custom Shortcuts
-
 
 https://draculatheme.com/gnome-terminal
