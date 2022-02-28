@@ -77,6 +77,51 @@ $ xrandr | grep -e " connected [^(]" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/"
 
 ### `flameshot`
 
+### `shopt -s autocd` (add to `.bashrc`)
+
+### `bat` 
+[] TODO Learn How To Use
+Read about `bat` and its integration in https://github.com/sharkdp/bat
+- fzf
+- find
+- grep
+- etc
+
+```
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+alias bat='batcat'
+```
+
+### `fd` the better `find`
+[] TODO Learn How To Use
+[Github `fd`](https://github.com/sharkdp/fd#installation)
+
+### `navi`
+[] TODO Learn How To Use
+
+### `ripgrep`
+[] TODO Learn How To Use
+
+### PDFSam
+```
+cd /home/augusto/.local/share/applications
+
+vim PDFsam.desktop
+
+# past 
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=PDFsam
+Exec="/home/augusto/PDFsam/pdfsam-4.2.12-linux/bin/pdfsam.sh" %f
+Icon=/home/augusto/PDFsam/pdfsam-4.2.12-linux/bin/icon.png
+Encoding=UTF-8
+Terminal=false
+
+```
+
 ## Audio Adjustments
 ### Pulse
 ```
@@ -132,6 +177,11 @@ sudo xed /etc/sysctl.conf
 
 - What is `exa`?
     - A replacement for the comand `ls`? 
+
+- What is symbolic link?
+
+- what is a widget shell?
+    - `eval "$(navi widget bash)"`
 
 
 ## Terminal file manager for the console
