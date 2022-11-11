@@ -1,6 +1,9 @@
 # Linux Mint Configuration
 
-## Install docker
+### Adding Swap
+[IAdd Swap](https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/)
+
+### Install docker
 [Install docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
 
 ## Resolution Adjustments (`xrandr` and `gtf`)
