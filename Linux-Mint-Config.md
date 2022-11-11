@@ -1,5 +1,8 @@
 # Linux Mint Configuration
 
+## Install docker
+[Install docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
+
 ## Resolution Adjustments (`xrandr` and `gtf`)
 
 ### Detect resolution automatically
