@@ -17,3 +17,5 @@ The above command will unzip gradle-*.zip and move it for the folder `/opt/gradl
 ## Remove `specific` folders in all subfolders
 `find . -type d | grep -E '/target$' | xargs rm -r`
 
+## Creates individual zip files for each subdirectory in the current directory
+`for i in */; do zip -0 -r "${i%/}.zip" "$i" & done; wait`
